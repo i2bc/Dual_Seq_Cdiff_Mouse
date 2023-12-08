@@ -29,9 +29,11 @@ euler_plot <- function(ec, updo, feature) {
    fit <- euler(c(A=ec[5,2],B=ec[3,2],"A&B"=ec[7,2],C=ec[2,2],"A&C"=ec[6,2],"B&C"=ec[4,2],"A&B&C"=ec[8,2]))
    e_plot <- plot(fit, 
        fills = c("lightcoral", "mediumslateblue", "palegreen3"), 
-       quantities = TRUE, 
-       labels = c("kreis","fletcher","pruss"), 
+       quantities = list(cex = 2), #quantities = TRUE, 
+       legend = list(labels = c("kreis", "fletcher", "pruss"), cex = 1.5),
+       labels = NULL,
        edges = FALSE, 
+       main.cex = 2,
        main=paste(updo, feature))
    ggsave(paste(feature, updo, "euler.png", sep="_"), e_plot)
 }
@@ -48,15 +50,14 @@ run_chi2test <- function(kp4ct, feat, m1, m2) {
    }
 }
 
-filenames <- "kreis_fletcher_pruss_mAmBl2FCpadj.txt" 
+filenames <- "../kreis_fletcher_pruss_mAmBl2FCpadjStat.txt" 
 kfp <- read.csv(filenames, sep="\t", header=TRUE)
-colnames(kfp) <- c("Idk","mAk","mBk","l2FCk","padjk","Idf","mAf","mBf","l2FCf","padjf","Idp","mAp","mBp","l2FCp","padjp")
-# NAfisrt: NA suppression of Log2FC & padj :
+colnames(kfp) <- c("Idk","mAk","mBk","l2FCk","padjk","statk","Idf","mAf","mBf","l2FCf","padjf","statf","Idp","mAp","mBp","l2FCp","padjp","statp")
+# NA suppression, Log2FC & padj :
 kfp_noNA <- filter(kfp, !((is.na(padjk)|is.na(padjf)|is.na(padjp)|is.na(l2FCk)|is.na(l2FCf)|is.na(l2FCp))))
 
 # comparison kreis - fletcher:
-# NAfisrt: kf <- select(kfp_noNA, "Idk","mAk","mBk","l2FCk","padjk","Idf","mAf","mBf","l2FCf","padjf")
-kf <- kfp %>% select("Idk","mAk","mBk","l2FCk","padjk","Idf","mAf","mBf","l2FCf","padjf") %>% filter(!((is.na(padjk)|is.na(padjf)|is.na(l2FCk)|is.na(l2FCf))))
+kf <- select(kfp_noNA, "Idk","mAk","mBk","l2FCk","padjk","Idf","mAf","mBf","l2FCf","padjf")
 kf_sRNA=kf[!grepl ("CD630_0|CD630_1|CD630_2|CD630_3",kf$Idk),]
 run_chi2test(kf_sRNA, "sRNAs", "kreis", "fletcher")
 kf_CDS=kf[grepl ("CD630_0|CD630_1|CD630_2|CD630_3",kf$Idk),]
@@ -64,8 +65,7 @@ run_chi2test(kf_CDS, "CDS", "kreis", "fletcher")
 # run_chi2test(kf_noNA, "genes", "kreis", "fletcher")
 
 # comparison kreis - pruss:
-# NAfisrt: kp <- select(kfp_noNA, "Idk","mAk","mBk","l2FCk","padjk","Idp","mAp","mBp","l2FCp","padjp")
-kp <- kfp %>% select("Idk","mAk","mBk","l2FCk","padjk","Idp","mAp","mBp","l2FCp","padjp") %>% filter(!((is.na(padjk)|is.na(padjp)|is.na(l2FCk)|is.na(l2FCp))))
+kp <- select(kfp_noNA, "Idk","mAk","mBk","l2FCk","padjk","Idp","mAp","mBp","l2FCp","padjp")
 kp_sRNA=kp[!grepl ("CD630_0|CD630_1|CD630_2|CD630_3",kp$Idk),]
 run_chi2test(kp_sRNA, "sRNAs", "kreis", "pruss")
 kp_CDS=kp[grepl ("CD630_0|CD630_1|CD630_2|CD630_3",kp$Idk),]
@@ -73,8 +73,7 @@ run_chi2test(kp_CDS, "CDS", "kreis", "pruss")
 # run_chi2test(kp_noNA, "genes", "kreis", "pruss")
 
 # comparison fletcher - pruss:
-# NAfisrt: fp <- select(kfp_noNA, "Idf","mAf","mBf","l2FCf","padjf","Idp","mAp","mBp","l2FCp","padjp")
-fp <- kfp %>% select("Idf","mAf","mBf","l2FCf","padjf","Idp","mAp","mBp","l2FCp","padjp") %>% filter(!((is.na(padjf)|is.na(padjp)|is.na(l2FCf)|is.na(l2FCp))))
+fp <- select(kfp_noNA, "Idf","mAf","mBf","l2FCf","padjf","Idp","mAp","mBp","l2FCp","padjp")
 fp_sRNA=fp[!grepl ("CD630_0|CD630_1|CD630_2|CD630_3",fp$Idf),]
 run_chi2test(fp_sRNA, "sRNAs", "fletcher", "pruss")
 fp_CDS=fp[grepl ("CD630_0|CD630_1|CD630_2|CD630_3",fp$Idf),]
@@ -109,12 +108,27 @@ kfp_4hm <- as.matrix(kfp_sRNA_DE %>%
   filter(!((l2FCkNA==0&l2FCfNA==0)|(l2FCkNA==0&l2FCpNA==0)|(l2FCfNA==0&l2FCpNA==0))))
 # heatmap graph:
 colnames(kfp_4hm) <- c("Kreis","Fletcher","Pruss")
+# png display
 png("kfp_sRNA_heatmap.png", width=300, height = 1000)
 Heatmap(kfp_4hm, 
         name = "Log2FC", 
         column_names_rot = 45, 
+        column_names_gp = gpar(fontsize = 16),
         cluster_columns = FALSE, 
         show_row_dend = FALSE,
+        show_heatmap_legend = FALSE, 
+        row_names_gp = gpar(fontsize = 7))
+dev.off()
+# tiff display
+tiff("kfp_sRNA_heatmap.tiff", res=120, width=600, height = 2100, compression="none")
+# res in ppi, ~
+Heatmap(kfp_4hm, 
+        name = "Log2FC", 
+        column_names_rot = 45, 
+        column_names_gp = gpar(fontsize = 16),
+        cluster_columns = FALSE, 
+        show_row_dend = FALSE,
+        show_heatmap_legend = FALSE, 
         row_names_gp = gpar(fontsize = 7))
 dev.off()
 
@@ -132,14 +146,15 @@ kfp_CDS_DE <- kfp_noNA_CDS %>%
   mutate(l2FCpNA = ifelse(padjp > 0.05, 0.0, l2FCp)) %>%
   filter(!((l2FCkNA==0&l2FCfNA==0)|(l2FCkNA==0&l2FCpNA==0)|(l2FCfNA==0&l2FCpNA==0)))
 rownames(kfp_CDS_DE) <- kfp_CDS_DE[,c("Idk")]
-#    4) sort by the log2FC mean of the 3 experiments and keep only n genes up and down:
+#    4) sort by the log2FC mean of the 3 experiments
 # kfp_CDS_DE_4hm <- as.matrix(
 #  union(kfp_CDS_DE %>% slice_min(meanFCkfp, n = 50), kfp_CDS_DE %>% slice_max(meanFCkfp, n = 50)) %>% 
 #  select(l2FCkNA, l2FCfNA, l2FCpNA))
-#    4) keep all DE CDS:
+#    4) keep all DE CDS
 kfp_CDS_DE_4hm <- as.matrix(kfp_CDS_DE %>% select(l2FCkNA, l2FCfNA, l2FCpNA))
 # heatmap graph:
 colnames(kfp_CDS_DE_4hm) <- c("Kreis","Fletcher","Pruss")
+# png display
 png("kfp_CDS_heatmap.png", width=300, height = 1000)
 Heatmap(kfp_CDS_DE_4hm, 
         name = "Log2FC", 
@@ -147,5 +162,15 @@ Heatmap(kfp_CDS_DE_4hm,
         cluster_columns = FALSE, 
         show_row_dend = FALSE,
         show_column_dend = FALSE,
-        row_names_gp = gpar(fontsize = 7))
+        show_row_names = FALSE)
+dev.off()
+# tiff display
+tiff("kfp_CDS_heatmap.tiff", res=120, width=300, height = 1000, compression="none")
+Heatmap(kfp_CDS_DE_4hm, 
+        name = "Log2FC", 
+        column_names_rot = 45, 
+        cluster_columns = FALSE, 
+        show_row_dend = FALSE,
+        show_column_dend = FALSE,
+        show_row_names = FALSE)
 dev.off()
