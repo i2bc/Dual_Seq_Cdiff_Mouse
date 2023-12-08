@@ -1,0 +1,57 @@
+module:
+   fastqc/0.11.9
+   samtools/1.10
+   bowtie2/2.4.1
+   subread/2.0.1
+cwdDir:
+   "/shared/projects/clos_ribo_reg/analyses_Pruss/"
+pePrefix:
+   "_"
+condaEnvDir:
+   "/shared/projects/clos_ribo_reg/analyses_Fletcher_2018/conda_env/"
+genomeFna:
+   "/shared/projects/clos_ribo_reg/reference_dbs/Cdifficile_ASM920v2/GCF_000009205.2_ASM920v2_genomic.fna"
+genomeIdxDir:
+   "/shared/projects/clos_ribo_reg/analyses_Pruss/03_mapping_bowtie/"
+genomeIdxPrefix:
+   "idx_CD630_ASM920v2"
+#   "idx_VPI"
+dataDir:
+   "00_data/sortmerna/"
+fastqSuff:
+   "_trimmed.fastq.gz"
+fastqcDir:
+   "01_quality/"
+bwt2Dir:
+   "03_mapping_bowtie/"
+bwtSequencingOrientation:
+   "--fr"
+featureCountsDir:
+   "04_counts/"
+annotation:
+    "/shared/projects/clos_ribo_reg/reference_dbs/Cdifficile_MaGe/CD630_MaGe_ID.gff"
+fc_feature:
+   "gene"
+fc_tag:
+   "ID"
+fc_mode:
+   "-p -s 2 -O -M --fraction --primary "
+st_comparison: "Base_vs_WT"
+
+#"WT_vs_IV":
+#   st_condRef: "WT"
+#   st_conditions: ["BasevsWT"]
+#"Base_vs_WT":
+st_condRef: "Base"
+st_condition: "WTvsBase"
+#"4Sugar":
+#   st_condRef: "Base"
+#   st_conditions: ["GlucvsBase","SorbvsBase","MannvsBase","SorbvsMann","MannvsGluc","SorbvsGluc"]
+st_dir:
+   "05_DEG/"
+st_designDir:
+   "00_data/"
+st_group:
+   "group"
+annotFile:
+   "cdiff_id_prod_cog.list"

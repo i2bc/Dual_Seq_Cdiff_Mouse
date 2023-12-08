@@ -1,0 +1,46 @@
+module:
+   fastqc/0.11.9
+   samtools/1.10
+   bowtie2/2.4.1
+   subread/2.0.1
+cwdDir:
+   "/shared/projects/clos_ribo_reg/analyses_Pruss/"
+pePrefix:
+   "_"
+condaEnvDir:
+   "00_initial_data/conda_env/"
+genomeFna:
+   "00_initial_data/reference_dbs/Cdifficile_ASM920v2/GCF_000009205.2_ASM920v2_genomic.fna"
+genomeIdxPrefix:
+   "idx_CD630_ASM920v2"
+dataDir:
+   "00_initial_data/raw_fastq/"
+fastqSuff:
+   "_trimmed.fastq.gz"
+fastqcDir:
+   "01_quality/"
+bwt2Dir:
+   "03_mapping_bowtie/"
+bwtSequencingOrientation:
+   "--fr"
+featureCountsDir:
+   "04_counts/"
+annotation:
+    "/shared/projects/clos_ribo_reg/reference_dbs/Cdifficile_MaGe/CD630_MaGe_ID.gff"
+fc_feature:
+   "gene"
+fc_tag:
+   "ID"
+fc_mode:
+   "-p -s 2 -O -M --fraction --primary "
+st_comparison: "Base_vs_WT"
+st_condRef: "Base"
+st_condition: "WTvsBase"
+st_dir:
+   "05_DEG/"
+st_designDir:
+   "00_data/"
+st_group:
+   "group"
+annotFile:
+   "cdiff_id_prod_cog.list"

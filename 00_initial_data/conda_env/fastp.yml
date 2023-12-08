@@ -1,0 +1,10 @@
+channels:
+- conda-forge
+- bioconda
+dependencies:
+- python=3.7.6 # Specify python version (not required but can help with downstream conflicts)
+- snakemake-minimal=5.10.0 # The workflow manager
+- samtools=1.10 # For sorting/filtering bam
+- bowtie2=2.4.1 # for mapping
+
+
