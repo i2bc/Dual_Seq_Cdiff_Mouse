@@ -1,6 +1,6 @@
 # Dual_Seq_Cdiff_Mouse
 
-Repository to reproduce the analyses in Kreis _et al._ 2023.
+Repository to reproduce the analyses in Kreis _et al._ 202< : "Dual RNA-seq study of the dynamics of coding and non-coding RNAs expression during Clostridioides difficile infection in a mouse model"
 
 The analysis process consists of several parts: quality control (01), cleaning (02), mapping (03), prediction of new candidate ncRNA genes (04), counting the reads associated with each gene (05), analysis of differential gene expression (06), and comparisons with similar analyses already published (07).
 
