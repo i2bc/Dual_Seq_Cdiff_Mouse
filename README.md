@@ -6,7 +6,7 @@ Repository for the _C.difficiles_ RNAseq analyses of the Kreis _et al._ 2024 : "
 
 Dual-RNAseq data is available under identifier [PRJEB64651](https://www.ebi.ac.uk/ena/browser/view/PRJEB64651).
 
-The RNAseq analysis process consists of several parts: quality control (01), cleaning (02), mapping (03), prediction of new candidate ncRNA genes (06), counting the reads associated with each gene (04), analysis of differential gene expression (05), and comparisons (07) with similar analyses already published.
+The RNAseq analysis process consists of several parts: quality control (01_initial_qc), cleaning (02_data_processing), mapping (03_mappin_genome), prediction of new candidate ncRNA genes (04_detrprok), counting the reads associated with each gene (05_feature_Counts_genome), analysis of differential gene expression (06_DESeq2), and comparisons (08_post_analysis_and_figures) with similar analyses already published (07_Fletcher_and_Pruss_analyses).
 
 Install third-party softwares with the [conda](https://docs.conda.io/en/latest/) environment files present in the `00_initial_data/conda_env` repository (command line example: `conda env create -f 00_initial_data/conda_env/*.yml`)
 
@@ -15,7 +15,7 @@ Install third-party softwares with the [conda](https://docs.conda.io/en/latest/)
 The prediction of new candidate ncRNA genes was done with [DETR'PROK, 2.1.3 version](http://rssf.i2bc.paris-saclay.fr/Software/detrprok.php):
 
 
-### 06_Fletcher_and_Pruss_analyses
+### 07_Fletcher_and_Pruss_analyses
 
 For this comparisons with similar published analyses part, the entire analysis workflow (01-06) was taken over in the form of a snakemake pipeline, as the data were not from a dual-RNAseq and therefore required adaptation. 
 
