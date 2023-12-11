@@ -15,7 +15,7 @@ Install third-party softwares with the [conda](https://docs.conda.io/en/latest/)
 The prediction of new candidate ncRNA genes was done with [DETR'PROK v2.1.3](http://rssf.i2bc.paris-saclay.fr/Software/detrprok.php) and `Clusterize v1.0.3` and `Compare Overlapping v1.0.4` of the [S-MART tools](https://urgi.versailles.inrae.fr/Tools/S-Mart).
 
 
-### 07_Fletcher_and_Pruss_analyses
+### Fletcher and Pruss analyses
 
 For this comparisons with similar published analyses part, the analysis workflow (01-06) was taken over in the form of a snakemake pipeline, as the data were not from a dual-RNAseq and therefore required adaptation. 
 
