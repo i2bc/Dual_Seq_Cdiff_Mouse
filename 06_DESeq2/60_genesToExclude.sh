@@ -44,6 +44,6 @@ echo '########################################'
 
 # based on "rRNA" and "tRNA" feature of gff files + Parent field (for gene ID)
 # create a file of one line (where each gene name is coma separated)
-srun awk -F "\t" '{if(($3=="tRNA")||($3=="rRNA")){print $0}}' ../04_featureCounts_genome/mergeAnnot.gff | grep -o "Parent=[^;]*;" | sed 's/Parent=//;s/;//' | awk 'BEGIN{RS="\n";ORS=","}{print}' | sed 's/,$/\n/' > genesToExclude.txt
+srun awk -F "\t" '{if(($3=="tRNA")||($3=="rRNA")){print $0}}' ../05_featureCounts_genome/mergeAnnot.gff | grep -o "Parent=[^;]*;" | sed 's/Parent=//;s/;//' | awk 'BEGIN{RS="\n";ORS=","}{print}' | sed 's/,$/\n/' > genesToExclude.txt
 
 

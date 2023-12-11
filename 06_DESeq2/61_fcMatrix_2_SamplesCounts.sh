@@ -41,7 +41,7 @@ echo '########################################'
 # modules/dependencies loading
 
 # Main script
-dir_fcMatrix=../04_featureCounts_genome
+dir_fcMatrix=../05_featureCounts_genome
 rm fc_data/all_hbt2_featureCounts_matrix.tab
 rm fc_data/*_CD630_fc.txt 
 rm fc_data/*_mouse_fc.txt
