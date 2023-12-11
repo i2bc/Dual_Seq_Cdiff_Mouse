@@ -12,7 +12,7 @@ Install third-party softwares with the [conda](https://docs.conda.io/en/latest/)
 
 ### prediction of new candidate ncRNA genes
 
-The prediction of new candidate ncRNA genes was done with [DETR'PROK, 2.1.3 version](http://rssf.i2bc.paris-saclay.fr/Software/detrprok.php)
+The prediction of new candidate ncRNA genes was done with [DETR'PROK v2.1.3](http://rssf.i2bc.paris-saclay.fr/Software/detrprok.php) and `Clusterize v1.0.3` and `Compare Overlapping v1.0.4` of the [S-MART tools](https://urgi.versailles.inrae.fr/Tools/S-Mart).
 
 
 ### 07_Fletcher_and_Pruss_analyses
