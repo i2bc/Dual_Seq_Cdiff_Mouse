@@ -6,7 +6,7 @@ Repository for the _C.difficiles_ RNAseq analyses of the Kreis _et al._ 2024 : "
 
 Dual-RNAseq data is available under identifier [PRJEB64651](https://www.ebi.ac.uk/ena/browser/view/PRJEB64651).
 
-The RNAseq analysis process consists of several parts: quality control (01), cleaning (02), mapping (03), prediction of new candidate ncRNA genes (04), counting the reads associated with each gene (05), analysis of differential gene expression (06), and comparisons with similar analyses already published (07).
+The RNAseq analysis process consists of several parts: quality control (01), cleaning (02), mapping (03), prediction of new candidate ncRNA genes (06), counting the reads associated with each gene (04), analysis of differential gene expression (05), and comparisons (07) with similar analyses already published.
 
 Install third-party softwares with the [conda](https://docs.conda.io/en/latest/) environment files present in the `00_initial_data/conda_env` repository (command line example: `conda env create -f 00_initial_data/conda_env/*.yml`)
 
