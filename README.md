@@ -6,7 +6,7 @@ The analysis process consists of several parts: quality control (01), cleaning (
 
 ## Dual-RNAseq analysis
 
-Dual-RNAseq data are available under identifier [PRJEB64651](https://www.ebi.ac.uk/ena/browser/view/PRJEB64651).
+Dual-RNAseq data is available under identifier [PRJEB64651](https://www.ebi.ac.uk/ena/browser/view/PRJEB64651).
 
 ### prediction of new candidate ncRNA genes
 
@@ -15,7 +15,7 @@ The prediction of new candidate ncRNA genes was done with [DETR'PROK, 2.1.3 vers
 
 ## Comparisons with similar published analyses
 
-For this part, the entire analysis workflow was taken over in the form of a snakemake pipeline, as the data were not from a dual-RNAseq and therefore required adaptation.
+For this part, the entire analysis workflow (01-06) was taken over in the form of a snakemake pipeline, as the data were not from a dual-RNAseq and therefore required adaptation.
 
 ### publisehd analysis
 
@@ -27,5 +27,5 @@ List of reads ID and download url links stand in spplemental table 2.
 ### get example data set
 
 From the Pruss study, WT _vs._ IV conditions:
-WT: [SRR12762560](https://www.ebi.ac.uk/ena/browser/view/SRR12762560) [SRR12762561](https://www.ebi.ac.uk/ena/browser/view/SRR12762561) [SRR12762562](https://www.ebi.ac.uk/ena/browser/view/SRR12762562) [SRR12762563](https://www.ebi.ac.uk/ena/browser/view/SRR12762563)
-IV: 
+- WT: [SRR12762560](https://www.ebi.ac.uk/ena/browser/view/SRR12762560) [SRR12762561](https://www.ebi.ac.uk/ena/browser/view/SRR12762561) [SRR12762562](https://www.ebi.ac.uk/ena/browser/view/SRR12762562) [SRR12762563](https://www.ebi.ac.uk/ena/browser/view/SRR12762563)
+- IV: [SRR12766943]https://www.ebi.ac.uk/ena/browser/view/SRR12766943 [SRR12766946]https://www.ebi.ac.uk/ena/browser/view/SRR12766946 [SRR12766947]https://www.ebi.ac.uk/ena/browser/view/SRR12766947
