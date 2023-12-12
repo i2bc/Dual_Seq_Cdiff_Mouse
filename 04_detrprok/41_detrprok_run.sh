@@ -73,10 +73,10 @@ python ~/Sources/Smart/clusterize.py -i cand_tmp.gff -f gff -o cand_tmp_clust.gf
 grep nbE cand_tmp_clust.gff > cand_tmp_clust_only.gff
 cp cand_tmp_clust_only.gff sRNA_candidates.tmp1
 awk -F "\t" '{if(($3=="sRNA")&&($0!~"nbE")){print}}' cand_tmp_clust.gff >> sRNA_candidates.tmp1
-~/Sources/Smart/CompareOverlapping.py -j sRNA_connus.gff -f gff -i sRNA_candidates.tmp1 -g gff -c -x -o sRNA_candidates.tmp2
-~/Sources/Smart/CompareOverlapping.py -j NC_009089.1_stRNA.gff -f gff -i sRNA_candidates.tmp2 -g gff -d 100 -c -x -o sRNA_candidates.tmp3
-~/Sources/Smart/CompareOverlapping.py -j NC_009089.1_stRNA.gff -f gff -i sRNA_candidates.tmp3 -g gff -a -x -o sRNA_candidates.tmp4
-~/Sources/deleteTagGff.pl -i sRNA_candidates.tmp4  -d nbElements,nbOverlappingReads,Name,ID | sed 's/Name=/detectedIn=/;s/S-MART/detrprok/;s/asRNA/sRNA/' > sRNA_candidates.gff
+Smart/CompareOverlapping.py -j ../00_initial_data/sRNA_knownBeforeThisWork.gff -f gff -i sRNA_candidates.tmp1 -g gff -c -x -o sRNA_candidates.tmp2
+Smart/CompareOverlapping.py -j NC_009089.1_stRNA.gff -f gff -i sRNA_candidates.tmp2 -g gff -d 100 -c -x -o sRNA_candidates.tmp3
+Smart/CompareOverlapping.py -j NC_009089.1_stRNA.gff -f gff -i sRNA_candidates.tmp3 -g gff -a -x -o sRNA_candidates.tmp4
+deleteTagGff.pl -i sRNA_candidates.tmp4  -d nbElements,nbOverlappingReads,Name,ID | sed 's/Name=/detectedIn=/;s/S-MART/detrprok/;s/asRNA/sRNA/' > sRNA_candidates.gff
 for i in sRNA asRNA ; do 
    awk -F "\t" -v type=${i} '{if($3==type){print}}' sRNA_candidates.gff | sed 's/NC_009089.1/CD630/g;s/colour/color/g' > ${i}_candidates_CD630.gff ; 
 done
