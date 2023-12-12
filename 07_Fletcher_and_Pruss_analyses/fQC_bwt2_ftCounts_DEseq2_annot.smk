@@ -19,7 +19,7 @@ rule all:
   input:   
     expand(config["cwdDir"]+config["fastqcDir"]+"{sample}"+config["pePrefix"]+"1_fastqc.html", sample=SAMPLES),
     expand(config["cwdDir"]+config["fastqcDir"]+"{sample}"+config["pePrefix"]+"2_fastqc.html", sample=SAMPLES),
-    expand(config["cwdDir"]+config["cwdDir"]+config["bwt2Dir"]+config["genomeIdxPrefix"]+".{bwt2_idx}.bt2", bwt2_idx=BWT2_IDX),
+    expand(config["cwdDir"]+config["bwt2Dir"]+config["genomeIdxPrefix"]+".{bwt2_idx}.bt2", bwt2_idx=BWT2_IDX),
     expand(config["cwdDir"]+config["bwt2Dir"]+"{sample}.bam", sample=SAMPLES),
     expand(config["cwdDir"]+config["bwt2Dir"]+"{sample}.flagstat", sample=SAMPLES),
     expand(config["cwdDir"]+config["bwt2Dir"]+"{sample}.bam.bai", sample=SAMPLES),
@@ -59,7 +59,7 @@ rule analyseDiff:
     resultDir=config["cwdDir"]+config["st_dir"]+config["st_comparison"]+"/",
     html=config["st_comparison"]+"_report.html",
     RData=config["st_comparison"]+".RData",
-    script=config["cwdDir"]+config["st_designDir"]+"sartools_script_DESeq2_CL.r",
+    script=config["cwdDir"]+config["st_designDir"]+config["st_script"],
     compName=config["st_comparison"],
     rawDir=config["cwdDir"]+config["featureCountsDir"],
     group=config["st_group"],
@@ -156,8 +156,8 @@ rule bowtie2_mapping:
     temp(config["cwdDir"]+config["bwt2Dir"]+"{sample}.sam")
   input:
     idx=rules.bowtie2_genome_indexing.output,
-    r1=config["dataDir"]+"{sample}"+config["pePrefix"]+"1"+config["fastqSuff"],
-    r2=config["dataDir"]+"{sample}"+config["pePrefix"]+"2"+config["fastqSuff"]
+    r1=config["dataDir"]+"{sample}"+config["pePrefix"]+"1"+config["peSuffix"]+config["fastqSuff"],
+    r2=config["dataDir"]+"{sample}"+config["pePrefix"]+"2"+config["peSuffix"]+config["fastqSuff"]
   params:
     index=config["cwdDir"]+config["bwt2Dir"]+config["genomeIdxPrefix"],
     orientation=config["bwtSequencingOrientation"]
@@ -182,8 +182,8 @@ rule fastqc:
     config["cwdDir"]+config["fastqcDir"]+"{sample}"+config["pePrefix"]+"1_fastqc.html",
     config["cwdDir"]+config["fastqcDir"]+"{sample}"+config["pePrefix"]+"2_fastqc.html"
   input: 
-    r1=config["dataDir"]+"{sample}"+config["pePrefix"]+"1.fastq.gz",
-    r2=config["dataDir"]+"{sample}"+config["pePrefix"]+"2.fastq.gz"
+    r1=config["dataDir"]+"{sample}"+config["pePrefix"]+"1"+config["peSuffix"]+config["fastqSuff"],
+    r2=config["dataDir"]+"{sample}"+config["pePrefix"]+"2"+config["peSuffix"]+config["fastqSuff"] 
   params:
     outDir=config["fastqcDir"]
   log:
