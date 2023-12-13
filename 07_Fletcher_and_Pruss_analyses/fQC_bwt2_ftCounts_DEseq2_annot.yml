@@ -39,9 +39,9 @@ fc_mode:
 st_script:
    "script_DESeq2_CL.r"
 st_comparison: 
-   "Base_vs_WT"
+   "Toy_example"
 st_condRef: 
-   "Base"
+   "WT"
 st_condition: 
    "WTvsBase"
 st_dir:
