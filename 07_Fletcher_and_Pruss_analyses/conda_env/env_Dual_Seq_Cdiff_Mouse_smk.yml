@@ -1,0 +1,14 @@
+name: Dual_Seq_Cdiff_Mouse_smk
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - snakemake-minimal=7.32.4
+  - samtools=1.19
+  - bedtools=2.31.1
+  - fastqc=0.12.1
+  - subread=2.0.6
+  - bowtie2=2.5.2
+  - r-sartools=1.8.1
+
+

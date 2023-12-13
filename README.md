@@ -34,7 +34,7 @@ The files `selection_from_Fletcher_study.txt` and `selection_from_Pruss_study.tx
 
 Third-party softwares may be accessible with the [conda](https://docs.conda.io/en/latest/) environment files present in the `07_Fletcher_and_Pruss_analyses/conda_env` repository (command line example: `conda env create -f conda_env/*.yml`)
 
-To run the snakemake pipeline on a functional example :
+Test snakefile operation on a lightweight example:
 
 As the differential analysis step is done with the [SARTools](https://github.com/PF2-pasteur-fr/SARTools) package, copy of the `template_script_DESeq2_CL.r` in the `07_Fletcher_and_Pruss_analyses` folder.
 
