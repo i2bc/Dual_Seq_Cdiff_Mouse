@@ -4,42 +4,50 @@ module:
    bowtie2/2.4.1
    subread/2.0.1
 cwdDir:
-   "/shared/projects/clos_ribo_reg/analyses_Pruss/"
+   # "/adapt/to/the/environment/
+   "/home/c.toffano-nioche/OSoutourina/DualRNAseq_2019/TestCodes/Dual_Seq_Cdiff_Mouse/07_Fletcher_and_Pruss_analyses/"
 pePrefix:
    "_"
+peSuffix:
+   "_10000firstreads"
 condaEnvDir:
-   "00_initial_data/conda_env/"
+   "data_example/conda_env/"
 genomeFna:
-   "00_initial_data/reference_dbs/Cdifficile_ASM920v2/GCF_000009205.2_ASM920v2_genomic.fna"
+   "data_example/NC_009089.1.fna"
 genomeIdxPrefix:
-   "idx_CD630_ASM920v2"
+   "idx_NC_009089.1"
 dataDir:
-   "00_initial_data/raw_fastq/"
+   "data_example/"
 fastqSuff:
-   "_trimmed.fastq.gz"
+   ".fastq.gz"
 fastqcDir:
    "01_quality/"
 bwt2Dir:
-   "03_mapping_bowtie/"
+   "02_mapping_bowtie/"
 bwtSequencingOrientation:
    "--fr"
 featureCountsDir:
-   "04_counts/"
+   "03_counts/"
 annotation:
-    "/shared/projects/clos_ribo_reg/reference_dbs/Cdifficile_MaGe/CD630_MaGe_ID.gff"
+    "data_example/NC_009089.1.gff"
 fc_feature:
    "gene"
 fc_tag:
    "ID"
 fc_mode:
    "-p -s 2 -O -M --fraction --primary "
-st_comparison: "Base_vs_WT"
-st_condRef: "Base"
-st_condition: "WTvsBase"
+st_script:
+   ""
+st_comparison: 
+   "Base_vs_WT"
+st_condRef: 
+   "Base"
+st_condition: 
+   "WTvsBase"
 st_dir:
-   "05_DEG/"
+   "04_DEG/"
 st_designDir:
-   "00_data/"
+   "data_example/"
 st_group:
    "group"
 annotFile:

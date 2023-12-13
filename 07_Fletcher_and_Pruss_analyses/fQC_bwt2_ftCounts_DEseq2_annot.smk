@@ -11,14 +11,14 @@
 # sbatch --mem 80GB snakemake --drmaa --jobs=4 -s fQC_bwt2_ftCounts_DEseq2_annot.smk --configfile fQC_bwt2_ftCounts_DEseq2_annot.yml 
 
 
-SAMPLES, = glob_wildcards(config["dataDir"]+"{sample}"+config["pePrefix"]+"1"+config["fastqSuff"])
+SAMPLES, = glob_wildcards(config["dataDir"]+"{sample}"+config["pePrefix"]+"1"+config["peSuffix"]+config["fastqSuff"])
 BWT2_IDX = ["1","2","3","4","rev.1","rev.2"]
 
 
 rule all:
   input:   
-    expand(config["cwdDir"]+config["fastqcDir"]+"{sample}"+config["pePrefix"]+"1_fastqc.html", sample=SAMPLES),
-    expand(config["cwdDir"]+config["fastqcDir"]+"{sample}"+config["pePrefix"]+"2_fastqc.html", sample=SAMPLES),
+    expand(config["cwdDir"]+config["fastqcDir"]+"{sample}"+config["pePrefix"]+"1"+config["peSuffix"]+"_fastqc.html", sample=SAMPLES),
+    expand(config["cwdDir"]+config["fastqcDir"]+"{sample}"+config["pePrefix"]+"2"+config["peSuffix"]+"_fastqc.html", sample=SAMPLES),
     expand(config["cwdDir"]+config["bwt2Dir"]+config["genomeIdxPrefix"]+".{bwt2_idx}.bt2", bwt2_idx=BWT2_IDX),
     expand(config["cwdDir"]+config["bwt2Dir"]+"{sample}.bam", sample=SAMPLES),
     expand(config["cwdDir"]+config["bwt2Dir"]+"{sample}.flagstat", sample=SAMPLES),
@@ -59,7 +59,7 @@ rule analyseDiff:
     resultDir=config["cwdDir"]+config["st_dir"]+config["st_comparison"]+"/",
     html=config["st_comparison"]+"_report.html",
     RData=config["st_comparison"]+".RData",
-    script=config["cwdDir"]+config["st_designDir"]+config["st_script"],
+    script=config["cwdDir"]+config["st_script"],
     compName=config["st_comparison"],
     rawDir=config["cwdDir"]+config["featureCountsDir"],
     group=config["st_group"],
@@ -94,7 +94,7 @@ rule featureCount:
   threads: 8
   shell:
     """
-       srun featureCounts -T {threads} {params.mode} -t {params.feature} -g {params.tag} -a {params.annotation} -o {output} {input}
+       featureCounts -T {threads} {params.mode} -t {params.feature} -g {params.tag} -a {params.annotation} -o {output} {input}
     """
 
 rule bwt_bam_2_bai_and_stat:
@@ -177,10 +177,10 @@ rule bowtie2_mapping:
 
 rule fastqc:
   output: 
-    config["cwdDir"]+config["fastqcDir"]+"{sample}"+config["pePrefix"]+"1_fastqc.zip",
-    config["cwdDir"]+config["fastqcDir"]+"{sample}"+config["pePrefix"]+"2_fastqc.zip",
-    config["cwdDir"]+config["fastqcDir"]+"{sample}"+config["pePrefix"]+"1_fastqc.html",
-    config["cwdDir"]+config["fastqcDir"]+"{sample}"+config["pePrefix"]+"2_fastqc.html"
+    config["cwdDir"]+config["fastqcDir"]+"{sample}"+config["pePrefix"]+"1"+config["peSuffix"]+"_fastqc.zip",
+    config["cwdDir"]+config["fastqcDir"]+"{sample}"+config["pePrefix"]+"2"+config["peSuffix"]+"_fastqc.zip",
+    config["cwdDir"]+config["fastqcDir"]+"{sample}"+config["pePrefix"]+"1"+config["peSuffix"]+"_fastqc.html",
+    config["cwdDir"]+config["fastqcDir"]+"{sample}"+config["pePrefix"]+"2"+config["peSuffix"]+"_fastqc.html"
   input: 
     r1=config["dataDir"]+"{sample}"+config["pePrefix"]+"1"+config["peSuffix"]+config["fastqSuff"],
     r2=config["dataDir"]+"{sample}"+config["pePrefix"]+"2"+config["peSuffix"]+config["fastqSuff"] 

@@ -1,0 +1,7 @@
+WT4 WT_RNA_4 	SRR12762560 	WT 	ftp.sra.ebi.ac.uk/vol1/fastq/SRR127/060/SRR12762560/
+WT3 WT_RNA_3 	SRR12762561 	WT 	ftp.sra.ebi.ac.uk/vol1/fastq/SRR127/061/SRR12762561/
+WT2 WT_RNA_2 	SRR12762562 	WT 	ftp.sra.ebi.ac.uk/vol1/fastq/SRR127/062/SRR12762562/
+WT1 WT_RNA_1 	SRR12762563 	WT 	ftp.sra.ebi.ac.uk/vol1/fastq/SRR127/063/SRR12762563/
+Base3 IV3 	SRR12766943 	Base 	ftp.sra.ebi.ac.uk/vol1/fastq/SRR127/043/SRR12766943/
+Base2 IV2 	SRR12766946 	Base 	ftp.sra.ebi.ac.uk/vol1/fastq/SRR127/046/SRR12766946/
+Base1 IV1 	SRR12766947 	Base 	ftp.sra.ebi.ac.uk/vol1/fastq/SRR127/047/SRR12766947/

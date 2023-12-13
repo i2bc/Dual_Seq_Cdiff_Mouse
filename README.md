@@ -25,20 +25,20 @@ The prediction of new candidate ncRNA genes was done with:
 
 ### Fletcher and Pruss analyses
 
-For this comparisons with similar published analyses part, the analysis workflow (01-06) was taken over in the form of a snakemake pipeline, as the data were not from a dual-RNAseq and therefore required adaptation. 
+For the comparisons with similar published analyses part, the analysis workflow (01-06) was taken over in the form of a snakemake pipeline, as the data were not from a dual-RNAseq and therefore required adaptation. 
 
 The publisehd analysis used are:
 
 - [Fletcher](https://doi.org/10.1038/s41467-020-20746-4), J.R., Pike, C.M., Parsons, R.J. et al. Clostridioides difficile exploits toxin-mediated inflammation to alter the host nutritional landscape and exclude competitors from the gut microbiota. Nat Commun 12, 462 (2021). doi: 10.1038/s41467-020-20746-4
 - [Pruss](https://doi.org/10.1038/s41586-021-03502-6), K.M., Sonnenburg, J.L. C. difficile exploits a host metabolite produced during toxin-mediated disease. Nature 593, 261–265 (2021). doi: 10.1038/s41586-021-03502-6
 
-List of sample ID and download url links stand in supplemental table 4.
+The files `selection_from_Fletcher_study.txt` and `selection_from_Pruss_study.txt` contain the selected samples used for the comparisons (see in `07_Fletcher_and_Pruss_analyses/data_example` folder).
 
 To run the snakemake pipeline on a toy example :
 
 The genome (fasta format) and annotation files (gff format) of _Clostridioides difficile 630_ should be present in the `07_Fletcher_and_Pruss_analyses/data_example` repository.
 
-The differential analysis step is done with the [SARTools](https://github.com/PF2-pasteur-fr/SARTools) package. Copy of the `template_script_DESeq2_CL.r` in the `07_Fletcher_and_Pruss_analyses/data_example` repository and adapt the bgining of this file to your environment.
+The differential analysis step is done with the [SARTools](https://github.com/PF2-pasteur-fr/SARTools) package. Copy of the `template_script_DESeq2_CL.r` in the `07_Fletcher_and_Pruss_analyses/data_example` repository and adapt the begining of this file to the environment.
 
 From the Pruss study, WT _vs._ IV conditions, download R1 and R2 RNAseq data:
 - WT: [SRR12762560](https://www.ebi.ac.uk/ena/browser/view/SRR12762560) [SRR12762561](https://www.ebi.ac.uk/ena/browser/view/SRR12762561)
