@@ -10,7 +10,7 @@ The RNAseq analysis process consists of several parts: quality control (`01_init
 
 References genomes (fasta format) and annotations (gff format) used may be downloaded from:
 - [Mus musculus genome assembly GRCm39](https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000001635.27)
-- [Clostridioides difficile 630](https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000009205.2). The annotations file for this organism was downoladed from the [MicroScope](http://www.genoscope.cns.fr/agc/microscope) facilities.
+- [Clostridioides difficile 630](https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000009205.2). The annotation file for this organism was downloaded from the [MicroScope](http://www.genoscope.cns.fr/agc/microscope) platform.
 
 Prediction of new candidate ncRNA genes and comparisons with similar already published analyses concern only _C.difficiles_ organism.
 
@@ -42,7 +42,7 @@ In the `07_Fletcher_and_Pruss_analyses` folder, extract the archive `Dual_Seq_Cd
 
 Under the activated Dual_Seq_Cdiff_Mouse_smk conda environment and in the `07_Fletcher_and_Pruss_analyses` folder, run : `snakemake --snakefile fQC_bwt2_ftCounts_DEseq2_annot.smk --configfile fQC_bwt2_ftCounts_DEseq2_annot.yml --cores 1`
 
-The functional test is completed if there is no difference between `07_Fletcher_and_Pruss_analyses/04_DEG/functionnal_example/tables/WTvsBase.complete_annot.txt` result file and `07_Fletcher_and_Pruss_analyses/data_example/WTvsBase.complete_annot.txt` file.
+The functional test is completed if there is no difference between `07_Fletcher_and_Pruss_analyses/04_DEG/functionnal_example/tables/WTvsBase.complete_annot.txt` result file and `07_Fletcher_and_Pruss_analyses/data_example/expectedResultOfFunctionalTest.txt` file.
 
 
 
