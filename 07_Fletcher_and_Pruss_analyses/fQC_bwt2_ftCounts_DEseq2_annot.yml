@@ -11,7 +11,7 @@ pePrefix:
 peSuffix:
    "_10000firstreads"
 condaEnvDir:
-   "data_example/conda_env/"
+   "conda_env/"
 genomeFna:
    "data_example/NC_009089.1.fna"
 genomeIdxPrefix:
