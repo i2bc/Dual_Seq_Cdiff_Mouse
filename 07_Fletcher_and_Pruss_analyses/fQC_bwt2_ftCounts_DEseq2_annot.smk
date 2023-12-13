@@ -2,6 +2,7 @@
 #
 # Author: Claire Toffano-Nioche 
 # I2BC, France
+# claire.toffano-nioche @ i2bc.paris-saclay.fr
 # 
 # may 2021
 # usage example on french IFB cluster:
