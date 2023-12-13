@@ -29,11 +29,11 @@ bwtSequencingOrientation:
 featureCountsDir:
    "03_counts/"
 annotation:
-    "data_example/NC_009089.1.gff"
+    "data_example/NC_009089.1_MaGe.gff"
 fc_feature:
    "gene"
 fc_tag:
-   "ID"
+   "locus_tag"
 fc_mode:
    "-p -s 2 -O -M --fraction --primary "
 st_script:

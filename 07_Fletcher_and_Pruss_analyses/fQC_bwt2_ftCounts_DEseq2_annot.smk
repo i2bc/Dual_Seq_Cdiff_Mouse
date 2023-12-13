@@ -39,7 +39,7 @@ rule addAnnotations:
     table=config["cwdDir"]+config["st_dir"]+config["st_comparison"]+"/tables/"+config["st_condition"]+".complete.txt"
   params:
     sep="-t $'\\t'",
-    annot=config["st_designDir"]+config["annotFile"]
+    annot=config["cwdDir"]+config["st_designDir"]+config["annotFile"]
   shell:  
     """
     awk -f addAnnotationHeaderLine.awk {input.table} > {output.annot}
