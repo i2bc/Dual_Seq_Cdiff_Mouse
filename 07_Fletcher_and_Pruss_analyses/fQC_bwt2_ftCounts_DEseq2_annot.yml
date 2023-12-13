@@ -9,7 +9,7 @@ cwdDir:
 pePrefix:
    "_"
 peSuffix:
-   ""
+   "_10000firstreads"
 condaEnvDir:
    "conda_env/"
 genomeFna:
@@ -37,11 +37,11 @@ fc_tag:
 fc_mode:
    "-p -s 2 -O -M --fraction --primary "
 st_script:
-   "script_DESeq2_CL.r"
+   "template_script_DESeq2_CL.r"
 st_comparison: 
-   "toy_example"
+   "functionnal_example"
 st_condRef: 
-   "WT"
+   "Base"
 st_condition: 
    "WTvsBase"
 st_dir:

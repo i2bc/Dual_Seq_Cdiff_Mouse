@@ -30,19 +30,19 @@ The publisehd analysis used are:
 - [Fletcher](https://doi.org/10.1038/s41467-020-20746-4), J.R., Pike, C.M., Parsons, R.J. et al. Clostridioides difficile exploits toxin-mediated inflammation to alter the host nutritional landscape and exclude competitors from the gut microbiota. Nat Commun 12, 462 (2021). doi: 10.1038/s41467-020-20746-4
 - [Pruss](https://doi.org/10.1038/s41586-021-03502-6), K.M., Sonnenburg, J.L. C. difficile exploits a host metabolite produced during toxin-mediated disease. Nature 593, 261–265 (2021). doi: 10.1038/s41586-021-03502-6
 
-The files `selection_from_Fletcher_study.txt` and `selection_from_Pruss_study.txt` contain the selected samples used for the published comparisons (see in `07_Fletcher_and_Pruss_analyses/data_example` folder).
+The files `selection_from_Fletcher_study.txt` and `selection_from_Pruss_study.txt` contain the selected samples used for the comparisons (see in `07_Fletcher_and_Pruss_analyses/data_example` folder).
 
-Third-party softwares may be accessible with the [conda](https://docs.conda.io/en/latest/) environment files present in the `00_initial_data/conda_env` repository (command line example: `conda env create -f 00_initial_data/conda_env/*.yml`)
+Third-party softwares may be accessible with the [conda](https://docs.conda.io/en/latest/) environment files present in the `07_Fletcher_and_Pruss_analyses/conda_env` repository (command line example: `conda env create -f conda_env/*.yml`)
 
-To run the snakemake pipeline on a toy example :
+To run the snakemake pipeline on a functional example :
 
-The genome (fasta format) and annotation files (gff format) of _Clostridioides difficile 630_ should be present in the `07_Fletcher_and_Pruss_analyses/data_example` repository.
+As the differential analysis step is done with the [SARTools](https://github.com/PF2-pasteur-fr/SARTools) package, copy of the `template_script_DESeq2_CL.r` in the `07_Fletcher_and_Pruss_analyses` folder.
 
-The differential analysis step is done with the [SARTools](https://github.com/PF2-pasteur-fr/SARTools) package. Copy of the `template_script_DESeq2_CL.r` in the `07_Fletcher_and_Pruss_analyses` folder.
+Extract in the `07_Fletcher_and_Pruss_analyses` folder the `` file containing the genome (fasta format) and annotation files (gff format) of _Clostridioides difficile 630_ and the first 10000 reads of R1 and R2 RNAseq data of the Pruss study (WT: [SRR12762560](https://www.ebi.ac.uk/ena/browser/view/SRR12762560) and [SRR12762561](https://www.ebi.ac.uk/ena/browser/view/SRR12762561) ; Base: [SRR12766943](https://www.ebi.ac.uk/ena/browser/view/SRR12766943) and [SRR12766946](https://www.ebi.ac.uk/ena/browser/view/SRR12766946)): `tar -xvzf 07_Fletcher_and_Pruss_analyses/Dual_Seq_Cdiff_Mouse_smk_example.tar.gz`
 
-From the Pruss study, WT _vs._ IV conditions, download R1 and R2 RNAseq data:
-- WT: [SRR12762560](https://www.ebi.ac.uk/ena/browser/view/SRR12762560) [SRR12762561](https://www.ebi.ac.uk/ena/browser/view/SRR12762561)
-- IV: [SRR12766943](https://www.ebi.ac.uk/ena/browser/view/SRR12766943) [SRR12766946](https://www.ebi.ac.uk/ena/browser/view/SRR12766946) 
+Under the activated Dual_Seq_Cdiff_Mouse_smk conda environment and in the `07_Fletcher_and_Pruss_analyses` folder, run : `snakemake --snakefile fQC_bwt2_ftCounts_DEseq2_annot.smk --configfile fQC_bwt2_ftCounts_DEseq2_annot.yml --cores 1`
+
+The functional test is completed if there is no difference between `07_Fletcher_and_Pruss_analyses/04_DEG/functionnal_example/tables/WTvsBase.complete_annot.txt` result file and `07_Fletcher_and_Pruss_analyses/data_example/WTvsBase.complete_annot.txt` file.
 
 
 
