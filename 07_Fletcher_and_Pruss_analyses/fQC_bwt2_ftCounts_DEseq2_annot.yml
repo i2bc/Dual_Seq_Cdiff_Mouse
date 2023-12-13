@@ -39,7 +39,7 @@ fc_mode:
 st_script:
    "template_script_DESeq2_CL.r"
 st_comparison: 
-   "functionnal_example"
+   "functional_example"
 st_condRef: 
    "Base"
 st_condition: 
