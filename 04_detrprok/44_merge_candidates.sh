@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Script to run DETR'PROK on Kreis (k), Prus (p), and Fletcher (f) data
+# Script to run DETR'PROK on Kreis (k), Prush (p), and Fletcher (f) data
 # https://github.com/i2bc/Dual_Seq_Cdiff_Mouse
 #
 # Thrid-party software:

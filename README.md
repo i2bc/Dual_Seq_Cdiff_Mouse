@@ -14,12 +14,9 @@ References genomes (fasta format) and annotations (gff format) used may be downl
 
 Prediction of new candidate ncRNA genes and comparisons with similar already published analyses concern only _C.difficiles_ organism.
 
-### Prediction of new candidate ncRNA genes
-
 The prediction of new candidate ncRNA genes was done with:
 - [DETR'PROK v2.1.3](http://rssf.i2bc.paris-saclay.fr/Software/detrprok.php)
 - `Clusterize v1.0.3` and `Compare Overlapping v1.0.4` of the [S-MART tools](https://urgi.versailles.inrae.fr/Tools/S-Mart)
-
 
 ### Fletcher and Pruss analyses
 
