@@ -10,7 +10,7 @@ The RNAseq analysis process consists of several parts: quality control (`01_init
 
 References genomes (fasta format) and annotations (gff format) used may be downloaded from:
 - [Mus musculus genome assembly GRCm39](https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000001635.27)
-- [Clostridioides difficile 630](https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000009205.2). The annotation file for this organism was downloaded from the [MicroScope](http://www.genoscope.cns.fr/agc/microscope) platform.
+- [Clostridioides difficile 630](https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000009205.2). The annotation file for this organism was downloaded the 28th February 2023 from the [MicroScope](http://www.genoscope.cns.fr/agc/microscope) platform and given in the `00_initial_data` folder (`NC_009089.1_MaGe.gff`).
 
 Prediction of new candidate ncRNA genes and comparisons with similar already published analyses concern only _C.difficiles_ organism.
 

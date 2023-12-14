@@ -16,7 +16,8 @@ for i in kMI kIVsampled pWT pBaseSampled fwtTYsampled fwtd2 ; do
 done
 Smart/clusterize.py -i sRNA_candidates.tmp -f gff -o sRNA_candidates.tmp1 -u gff -c 
 Smart/CompareOverlapping.py -j ../00_initial_data/sRNA_knownBeforeThisWork.gff -f gff -i sRNA_candidates.tmp1 -g gff -c -x -o sRNA_candidates.tmp2
-Smart/CompareOverlapping.py -j NC_009089.1_stRNA.gff -f gff -i sRNA_candidates.tmp2 -g gff -d 100 -c -x -o sRNA_candidates.tmp3
-Smart/CompareOverlapping.py -j NC_009089.1_stRNA.gff -f gff -i sRNA_candidates.tmp3 -g gff -a -x -o sRNA_candidates.tmp4
-deleteTagGff.pl -i sRNA_candidates.tmp4  -d nbElements,nbOverlappingReads,Name,ID | sed 's/Name=/detectedIn=/;s/S-MART/detrprok/;s/asRNA/sRNA/' > sRNA_candidates.gff
+Smart/CompareOverlapping.py -j ../00_initial_data/NC_009089.1_MaGe_stRNA.gff -f gff -i sRNA_candidates.tmp2 -g gff -d 100 -c -x -o sRNA_candidates.tmp3
+Smart/CompareOverlapping.py -j ../00_initial_data/NC_009089.1_MaGe_stRNA.gff -f gff -i sRNA_candidates.tmp3 -g gff -a -x -o sRNA_candidates.tmp4
+sed 's/Name=/detectedIn=/;s/S-MART/detrprok/;s/asRNA/sRNA/' sRNA_candidates.tmp4 > sRNA_candidates.tmp5
+deleteTagGff.pl -i sRNA_candidates.tmp5 -d nbElements,nbOverlappingReads,ID > sRNA_candidates.gff
 

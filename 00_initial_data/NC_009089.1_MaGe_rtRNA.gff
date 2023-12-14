@@ -1,0 +1,119 @@
+NC_009089.1	feature	rRNA	10812	12318	.	+	.	Name=NC_009089.1+10812..12318;gene=16s_rRNA;locus_tag=CD630_r0010;product=16S ribosomal RNA
+NC_009089.1	feature	tRNA	12372	12444	.	+	.	Name=NC_009089.1+12372..12444;gene=tRNA-Ala;locus_tag=CD630_t0010;product=tRNA-Ala
+NC_009089.1	feature	rRNA	12822	15720	.	+	.	Name=NC_009089.1+12822..15720;gene=23s_rRNA;locus_tag=CD630_r0020;product=23S ribosomal RNA
+NC_009089.1	feature	rRNA	15839	15968	.	+	.	Name=NC_009089.1+15839..15968;gene=5s_rRNA;locus_tag=CD630_r0030;product=5S ribosomal RNA
+NC_009089.1	feature	tRNA	20000	20088	.	+	.	Name=NC_009089.1+20000..20088;gene=tRNA-Ser;locus_tag=CD630_t0020;product=tRNA-Ser
+NC_009089.1	feature	rRNA	25267	26773	.	+	.	Name=NC_009089.1+25267..26773;gene=16s_rRNA;locus_tag=CD630_r0040;product=16S ribosomal RNA
+NC_009089.1	feature	rRNA	27034	29932	.	+	.	Name=NC_009089.1+27034..29932;gene=23s_rRNA;locus_tag=CD630_r0050;product=23S ribosomal RNA
+NC_009089.1	feature	rRNA	30115	30233	.	+	.	Name=NC_009089.1+30115..30233;gene=5s_rRNA;locus_tag=CD630_r0060;product=5S ribosomal RNA
+NC_009089.1	feature	tRNA	30237	30308	.	+	.	Name=NC_009089.1+30237..30308;gene=tRNA-Asn;locus_tag=CD630_t0030;product=tRNA-Asn
+NC_009089.1	feature	tRNA	30318	30403	.	+	.	Name=NC_009089.1+30318..30403;gene=tRNA-Leu;locus_tag=CD630_t0040;product=tRNA-Leu
+NC_009089.1	feature	tRNA	30419	30491	.	+	.	Name=NC_009089.1+30419..30491;gene=tRNA-Met;locus_tag=CD630_t0050;product=tRNA-Met
+NC_009089.1	feature	tRNA	30502	30573	.	+	.	Name=NC_009089.1+30502..30573;gene=tRNA-Glu;locus_tag=CD630_t0060;product=tRNA-Glu
+NC_009089.1	feature	tRNA	30586	30656	.	+	.	Name=NC_009089.1+30586..30656;gene=tRNA-Gly;locus_tag=CD630_t0070;product=tRNA-Gly
+NC_009089.1	feature	tRNA	30665	30737	.	+	.	Name=NC_009089.1+30665..30737;gene=tRNA-Val;locus_tag=CD630_t0080;product=tRNA-Val
+NC_009089.1	feature	tRNA	30746	30819	.	+	.	Name=NC_009089.1+30746..30819;gene=tRNA-Asp;locus_tag=CD630_t0090;product=tRNA-Asp
+NC_009089.1	feature	tRNA	30832	30903	.	+	.	Name=NC_009089.1+30832..30903;gene=tRNA-Thr;locus_tag=CD630_t0100;product=tRNA-Thr
+NC_009089.1	feature	tRNA	30921	31002	.	+	.	Name=NC_009089.1+30921..31002;gene=tRNA-Tyr;locus_tag=CD630_t0110;product=tRNA-Tyr
+NC_009089.1	feature	tRNA	31015	31095	.	+	.	Name=NC_009089.1+31015..31095;gene=tRNA-Leu;locus_tag=CD630_t0120;product=tRNA-Leu
+NC_009089.1	feature	tRNA	31128	31201	.	+	.	Name=NC_009089.1+31128..31201;gene=tRNA-Arg;locus_tag=CD630_t0130;product=tRNA-Arg
+NC_009089.1	feature	tRNA	31212	31284	.	+	.	Name=NC_009089.1+31212..31284;gene=tRNA-Gln;locus_tag=CD630_t0140;product=tRNA-Gln
+NC_009089.1	feature	tRNA	31375	31460	.	+	.	Name=NC_009089.1+31375..31460;gene=tRNA-Ser;locus_tag=CD630_t0150;product=tRNA-Ser
+NC_009089.1	feature	tRNA	31467	31539	.	+	.	Name=NC_009089.1+31467..31539;gene=tRNA-Phe;locus_tag=CD630_t0160;product=tRNA-Phe
+NC_009089.1	feature	tRNA	31549	31622	.	+	.	Name=NC_009089.1+31549..31622;gene=tRNA-Met;locus_tag=CD630_t0170;product=tRNA-Met
+NC_009089.1	feature	tRNA	31637	31710	.	+	.	Name=NC_009089.1+31637..31710;gene=tRNA-Met;locus_tag=CD630_t0180;product=tRNA-Met
+NC_009089.1	feature	tRNA	31737	31810	.	+	.	Name=NC_009089.1+31737..31810;gene=tRNA-Pro;locus_tag=CD630_t0190;product=tRNA-Pro
+NC_009089.1	feature	tRNA	31821	31894	.	+	.	Name=NC_009089.1+31821..31894;gene=tRNA-His;locus_tag=CD630_t0200;product=tRNA-His
+NC_009089.1	feature	tRNA	31906	31978	.	+	.	Name=NC_009089.1+31906..31978;gene=tRNA-Lys;locus_tag=CD630_t0210;product=tRNA-Lys
+NC_009089.1	feature	tRNA	31989	32059	.	+	.	Name=NC_009089.1+31989..32059;gene=tRNA-Cys;locus_tag=CD630_t0220;product=tRNA-Cys
+NC_009089.1	feature	tRNA	32069	32140	.	+	.	Name=NC_009089.1+32069..32140;gene=tRNA-Asn;locus_tag=CD630_t0230;product=tRNA-Asn
+NC_009089.1	feature	tRNA	32149	32234	.	+	.	Name=NC_009089.1+32149..32234;gene=tRNA-Leu;locus_tag=CD630_t0240;product=tRNA-Leu
+NC_009089.1	feature	tRNA	32250	32322	.	+	.	Name=NC_009089.1+32250..32322;gene=tRNA-Met;locus_tag=CD630_t0250;product=tRNA-Met
+NC_009089.1	feature	tRNA	32333	32404	.	+	.	Name=NC_009089.1+32333..32404;gene=tRNA-Glu;locus_tag=CD630_t0260;product=tRNA-Glu
+NC_009089.1	feature	tRNA	32417	32487	.	+	.	Name=NC_009089.1+32417..32487;gene=tRNA-Gly;locus_tag=CD630_t0270;product=tRNA-Gly
+NC_009089.1	feature	tRNA	32496	32568	.	+	.	Name=NC_009089.1+32496..32568;gene=tRNA-Val;locus_tag=CD630_t0280;product=tRNA-Val
+NC_009089.1	feature	tRNA	32577	32650	.	+	.	Name=NC_009089.1+32577..32650;gene=tRNA-Asp;locus_tag=CD630_t0290;product=tRNA-Asp
+NC_009089.1	feature	tRNA	32663	32734	.	+	.	Name=NC_009089.1+32663..32734;gene=tRNA-Thr;locus_tag=CD630_t0300;product=tRNA-Thr
+NC_009089.1	feature	tRNA	32752	32833	.	+	.	Name=NC_009089.1+32752..32833;gene=tRNA-Tyr;locus_tag=CD630_t0310;product=tRNA-Tyr
+NC_009089.1	feature	tRNA	32846	32926	.	+	.	Name=NC_009089.1+32846..32926;gene=tRNA-Leu;locus_tag=CD630_t0320;product=tRNA-Leu
+NC_009089.1	feature	tRNA	32953	33024	.	+	.	Name=NC_009089.1+32953..33024;gene=tRNA-Gly;locus_tag=CD630_t0330;product=tRNA-Gly
+NC_009089.1	feature	tRNA	33052	33125	.	+	.	Name=NC_009089.1+33052..33125;gene=tRNA-Arg;locus_tag=CD630_t0340;product=tRNA-Arg
+NC_009089.1	feature	tRNA	33138	33210	.	+	.	Name=NC_009089.1+33138..33210;gene=tRNA-Gln;locus_tag=CD630_t0350;product=tRNA-Gln
+NC_009089.1	feature	tRNA	33222	33294	.	+	.	Name=NC_009089.1+33222..33294;gene=tRNA-Lys;locus_tag=CD630_t0360;product=tRNA-Lys
+NC_009089.1	feature	tRNA	33300	33385	.	+	.	Name=NC_009089.1+33300..33385;gene=tRNA-Ser;locus_tag=CD630_t0370;product=tRNA-Ser
+NC_009089.1	feature	tRNA	33392	33464	.	+	.	Name=NC_009089.1+33392..33464;gene=tRNA-Phe;locus_tag=CD630_t0380;product=tRNA-Phe
+NC_009089.1	feature	tRNA	33474	33547	.	+	.	Name=NC_009089.1+33474..33547;gene=tRNA-Met;locus_tag=CD630_t0390;product=tRNA-Met
+NC_009089.1	feature	tRNA	33562	33635	.	+	.	Name=NC_009089.1+33562..33635;gene=tRNA-Met;locus_tag=CD630_t0400;product=tRNA-Met
+NC_009089.1	feature	tRNA	33656	33729	.	+	.	Name=NC_009089.1+33656..33729;gene=tRNA-His;locus_tag=CD630_t0410;product=tRNA-His
+NC_009089.1	feature	tRNA	33741	33813	.	+	.	Name=NC_009089.1+33741..33813;gene=tRNA-Lys;locus_tag=CD630_t0420;product=tRNA-Lys
+NC_009089.1	feature	tRNA	33824	33894	.	+	.	Name=NC_009089.1+33824..33894;gene=tRNA-Cys;locus_tag=CD630_t0430;product=tRNA-Cys
+NC_009089.1	feature	tRNA	33905	33978	.	+	.	Name=NC_009089.1+33905..33978;gene=tRNA-Arg;locus_tag=CD630_t0440;product=tRNA-Arg
+NC_009089.1	feature	tRNA	33994	34066	.	+	.	Name=NC_009089.1+33994..34066;gene=tRNA-Val;locus_tag=CD630_t0450;product=tRNA-Val
+NC_009089.1	feature	rRNA	124152	125658	.	+	.	Name=NC_009089.1+124152..125658;gene=16s_rRNA;locus_tag=CD630_r0070;product=16S ribosomal RNA
+NC_009089.1	feature	tRNA	125712	125784	.	+	.	Name=NC_009089.1+125712..125784;gene=tRNA-Ala;locus_tag=CD630_t0460;product=tRNA-Ala
+NC_009089.1	feature	rRNA	126161	129059	.	+	.	Name=NC_009089.1+126161..129059;gene=23s_rRNA;locus_tag=CD630_r0080;product=23S ribosomal RNA
+NC_009089.1	feature	rRNA	129193	129311	.	+	.	Name=NC_009089.1+129193..129311;gene=5s_rRNA;locus_tag=CD630_r0090;product=5S ribosomal RNA
+NC_009089.1	feature	tRNA	129315	129386	.	+	.	Name=NC_009089.1+129315..129386;gene=tRNA-Asn;locus_tag=CD630_t0470;product=tRNA-Asn
+NC_009089.1	feature	tRNA	129394	129465	.	+	.	Name=NC_009089.1+129394..129465;gene=tRNA-Glu;locus_tag=CD630_t0480;product=tRNA-Glu
+NC_009089.1	feature	tRNA	129474	129546	.	+	.	Name=NC_009089.1+129474..129546;gene=tRNA-Val;locus_tag=CD630_t0490;product=tRNA-Val
+NC_009089.1	feature	tRNA	129555	129628	.	+	.	Name=NC_009089.1+129555..129628;gene=tRNA-Asp;locus_tag=CD630_t0500;product=tRNA-Asp
+NC_009089.1	feature	tRNA	129642	129713	.	+	.	Name=NC_009089.1+129642..129713;gene=tRNA-Thr;locus_tag=CD630_t0510;product=tRNA-Thr
+NC_009089.1	feature	tRNA	129731	129812	.	+	.	Name=NC_009089.1+129731..129812;gene=tRNA-Tyr;locus_tag=CD630_t0520;product=tRNA-Tyr
+NC_009089.1	feature	tRNA	129825	129895	.	+	.	Name=NC_009089.1+129825..129895;gene=tRNA-Gly;locus_tag=CD630_t0530;product=tRNA-Gly
+NC_009089.1	feature	tRNA	129909	129982	.	+	.	Name=NC_009089.1+129909..129982;gene=tRNA-Arg;locus_tag=CD630_t0540;product=tRNA-Arg
+NC_009089.1	feature	tRNA	129995	130067	.	+	.	Name=NC_009089.1+129995..130067;gene=tRNA-Gln;locus_tag=CD630_t0550;product=tRNA-Gln
+NC_009089.1	feature	tRNA	130082	130154	.	+	.	Name=NC_009089.1+130082..130154;gene=tRNA-Lys;locus_tag=CD630_t0560;product=tRNA-Lys
+NC_009089.1	feature	tRNA	130160	130245	.	+	.	Name=NC_009089.1+130160..130245;gene=tRNA-Ser;locus_tag=CD630_t0570;product=tRNA-Ser
+NC_009089.1	feature	tRNA	130266	130353	.	+	.	Name=NC_009089.1+130266..130353;gene=tRNA-Ser;locus_tag=CD630_t0580;product=tRNA-Ser
+NC_009089.1	feature	tRNA	130365	130438	.	+	.	Name=NC_009089.1+130365..130438;gene=tRNA-Pro;locus_tag=CD630_t0590;product=tRNA-Pro
+NC_009089.1	feature	tRNA	130527	130599	.	+	.	Name=NC_009089.1+130527..130599;gene=tRNA-Trp;locus_tag=CD630_t0600;product=tRNA-Trp
+NC_009089.1	feature	tRNA	130663	130736	.	+	.	Name=NC_009089.1+130663..130736;gene=tRNA-Pro;locus_tag=CD630_t0610;product=tRNA-Pro
+NC_009089.1	feature	tRNA	130746	130819	.	+	.	Name=NC_009089.1+130746..130819;gene=tRNA-Ile;locus_tag=CD630_t0620;product=tRNA-Ile
+NC_009089.1	feature	tRNA	130826	130898	.	+	.	Name=NC_009089.1+130826..130898;gene=tRNA-Phe;locus_tag=CD630_t0630;product=tRNA-Phe
+NC_009089.1	feature	tRNA	130909	130982	.	+	.	Name=NC_009089.1+130909..130982;gene=tRNA-Met;locus_tag=CD630_t0640;product=tRNA-Met
+NC_009089.1	feature	rRNA	131099	132605	.	+	.	Name=NC_009089.1+131099..132605;gene=16s_rRNA;locus_tag=CD630_r0100;product=16S ribosomal RNA
+NC_009089.1	feature	tRNA	132659	132731	.	+	.	Name=NC_009089.1+132659..132731;gene=tRNA-Ala;locus_tag=CD630_t0650;product=tRNA-Ala
+NC_009089.1	feature	rRNA	133108	136006	.	+	.	Name=NC_009089.1+133108..136006;gene=23s_rRNA;locus_tag=CD630_r0110;product=23S ribosomal RNA
+NC_009089.1	feature	rRNA	136134	136253	.	+	.	Name=NC_009089.1+136134..136253;gene=5s_rRNA;locus_tag=CD630_r0120;product=5S ribosomal RNA
+NC_009089.1	feature	rRNA	141709	143215	.	+	.	Name=NC_009089.1+141709..143215;gene=16s_rRNA;locus_tag=CD630_r0130;product=16S ribosomal RNA
+NC_009089.1	feature	tRNA	143269	143341	.	+	.	Name=NC_009089.1+143269..143341;gene=tRNA-Ala;locus_tag=CD630_t0660;product=tRNA-Ala
+NC_009089.1	feature	rRNA	143657	146555	.	+	.	Name=NC_009089.1+143657..146555;gene=23s_rRNA;locus_tag=CD630_r0140;product=23S ribosomal RNA
+NC_009089.1	feature	rRNA	146758	146877	.	+	.	Name=NC_009089.1+146758..146877;gene=5s_rRNA;locus_tag=CD630_r0150;product=5S ribosomal RNA
+NC_009089.1	feature	tRNA	146879	146964	.	+	.	Name=NC_009089.1+146879..146964;gene=tRNA-Leu;locus_tag=CD630_t0670;product=tRNA-Leu
+NC_009089.1	feature	tRNA	146979	147052	.	+	.	Name=NC_009089.1+146979..147052;gene=tRNA-Met;locus_tag=CD630_t0680;product=tRNA-Met
+NC_009089.1	feature	rRNA	147164	148670	.	+	.	Name=NC_009089.1+147164..148670;gene=16s_rRNA;locus_tag=CD630_r0160;product=16S ribosomal RNA
+NC_009089.1	feature	tRNA	148724	148796	.	+	.	Name=NC_009089.1+148724..148796;gene=tRNA-Ala;locus_tag=CD630_t0690;product=tRNA-Ala
+NC_009089.1	feature	rRNA	149051	151949	.	+	.	Name=NC_009089.1+149051..151949;gene=23s_rRNA;locus_tag=CD630_r0170;product=23S ribosomal RNA
+NC_009089.1	feature	rRNA	152068	152197	.	+	.	Name=NC_009089.1+152068..152197;gene=5s_rRNA;locus_tag=CD630_r0180;product=5S ribosomal RNA
+NC_009089.1	feature	tRNA	152201	152272	.	+	.	Name=NC_009089.1+152201..152272;gene=tRNA-Asn;locus_tag=CD630_t0700;product=tRNA-Asn
+NC_009089.1	feature	tRNA	152281	152366	.	+	.	Name=NC_009089.1+152281..152366;gene=tRNA-Leu;locus_tag=CD630_t0710;product=tRNA-Leu
+NC_009089.1	feature	tRNA	152382	152454	.	+	.	Name=NC_009089.1+152382..152454;gene=tRNA-Met;locus_tag=CD630_t0720;product=tRNA-Met
+NC_009089.1	feature	tRNA	152465	152536	.	+	.	Name=NC_009089.1+152465..152536;gene=tRNA-Glu;locus_tag=CD630_t0730;product=tRNA-Glu
+NC_009089.1	feature	tRNA	152554	152624	.	+	.	Name=NC_009089.1+152554..152624;gene=tRNA-Gly;locus_tag=CD630_t0740;product=tRNA-Gly
+NC_009089.1	feature	tRNA	152633	152705	.	+	.	Name=NC_009089.1+152633..152705;gene=tRNA-Val;locus_tag=CD630_t0750;product=tRNA-Val
+NC_009089.1	feature	tRNA	152714	152787	.	+	.	Name=NC_009089.1+152714..152787;gene=tRNA-Asp;locus_tag=CD630_t0760;product=tRNA-Asp
+NC_009089.1	feature	tRNA	152801	152872	.	+	.	Name=NC_009089.1+152801..152872;gene=tRNA-Gly;locus_tag=CD630_t0770;product=tRNA-Gly
+NC_009089.1	feature	tRNA	152885	152958	.	+	.	Name=NC_009089.1+152885..152958;gene=tRNA-Arg;locus_tag=CD630_t0780;product=tRNA-Arg
+NC_009089.1	feature	rRNA	377339	378845	.	+	.	Name=NC_009089.1+377339..378845;gene=16s_rRNA;locus_tag=CD630_r0190;product=16S ribosomal RNA
+NC_009089.1	feature	rRNA	379066	381964	.	+	.	Name=NC_009089.1+379066..381964;gene=23s_rRNA;locus_tag=CD630_r0200;product=23S ribosomal RNA
+NC_009089.1	feature	rRNA	382093	382212	.	+	.	Name=NC_009089.1+382093..382212;gene=5s_rRNA;locus_tag=CD630_r0210;product=5S ribosomal RNA
+NC_009089.1	feature	tRNA	907922	908009	.	+	.	Name=NC_009089.1+907922..908009;gene=tRNA-Ser;locus_tag=CD630_t0790;product=tRNA-Ser
+NC_009089.1	feature	rRNA	1209213	1210719	.	+	.	Name=NC_009089.1+1209213..1210719;gene=16s_rRNA;locus_tag=CD630_r0220;product=16S ribosomal RNA
+NC_009089.1	feature	rRNA	1211104	1214003	.	+	.	Name=NC_009089.1+1211104..1214003;gene=23s_rRNA;locus_tag=CD630_r0230;product=23S ribosomal RNA
+NC_009089.1	feature	tRNA	1214096	1214166	.	+	.	Name=NC_009089.1+1214096..1214166;gene=tRNA-Gly;locus_tag=CD630_t0800;product=tRNA-Gly
+NC_009089.1	feature	rRNA	1214179	1214298	.	+	.	Name=NC_009089.1+1214179..1214298;gene=5s_rRNA;locus_tag=CD630_r0240;product=5S ribosomal RNA
+NC_009089.1	feature	tRNA	1326335	1326419	.	-	.	Name=NC_009089.1-1326335..1326419;gene=tRNA-Leu;locus_tag=CD630_t0810;product=tRNA-Leu
+NC_009089.1	feature	tRNA	1921006	1921086	.	+	.	Name=NC_009089.1+1921006..1921086;gene=tRNA-Leu;locus_tag=CD630_t0820;product=tRNA-Leu
+NC_009089.1	feature	tRNA	3149218	3149289	.	-	.	Name=NC_009089.1-3149218..3149289;gene=tRNA-Thr;locus_tag=CD630_t0830;product=tRNA-Thr
+NC_009089.1	feature	rRNA	3149385	3152283	.	-	.	Name=NC_009089.1-3149385..3152283;gene=23s_rRNA;locus_tag=CD630_r0250;product=23S ribosomal RNA
+NC_009089.1	feature	rRNA	3152566	3154072	.	-	.	Name=NC_009089.1-3152566..3154072;gene=16s_rRNA;locus_tag=CD630_r0260;product=16S ribosomal RNA
+NC_009089.1	feature	rRNA	4004287	4004406	.	-	.	Name=NC_009089.1-4004287..4004406;gene=5s_rRNA;locus_tag=CD630_r0270;product=5S ribosomal RNA
+NC_009089.1	feature	rRNA	4004533	4007432	.	-	.	Name=NC_009089.1-4004533..4007432;gene=23s_rRNA;locus_tag=CD630_r0280;product=23S ribosomal RNA
+NC_009089.1	feature	rRNA	4007692	4009197	.	-	.	Name=NC_009089.1-4007692..4009197;gene=16s_rRNA;locus_tag=CD630_r0290;product=16S ribosomal RNA
+NC_009089.1	feature	rRNA	4146943	4147062	.	-	.	Name=NC_009089.1-4146943..4147062;gene=5s_rRNA;locus_tag=CD630_r0300;product=5S ribosomal RNA
+NC_009089.1	feature	rRNA	4147189	4150087	.	-	.	Name=NC_009089.1-4147189..4150087;gene=23s_rRNA;locus_tag=CD630_r0310;product=23S ribosomal RNA
+NC_009089.1	feature	rRNA	4150397	4151903	.	-	.	Name=NC_009089.1-4150397..4151903;gene=16s_rRNA;locus_tag=CD630_r0320;product=16S ribosomal RNA
+NC_009089.1	feature	tRNA	4265536	4265607	.	-	.	Name=NC_009089.1-4265536..4265607;gene=tRNA-Thr;locus_tag=CD630_t0840;product=tRNA-Thr
+NC_009089.1	feature	tRNA	4265644	4265716	.	-	.	Name=NC_009089.1-4265644..4265716;gene=tRNA-Val;locus_tag=CD630_t0850;product=tRNA-Val
+NC_009089.1	feature	tRNA	4265724	4265795	.	-	.	Name=NC_009089.1-4265724..4265795;gene=tRNA-Glu;locus_tag=CD630_t0860;product=tRNA-Glu
+NC_009089.1	feature	tRNA	4265805	4265877	.	-	.	Name=NC_009089.1-4265805..4265877;gene=tRNA-Lys;locus_tag=CD630_t0870;product=tRNA-Lys
