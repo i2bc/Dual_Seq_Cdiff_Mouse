@@ -23,11 +23,11 @@ fastqSuff:
 fastqcDir:
    "01_quality/"
 bwt2Dir:
-   "02_mapping_bowtie/"
+   "03_mapping_genome/"
 bwtSequencingOrientation:
    "--fr"
 featureCountsDir:
-   "03_counts/"
+   "04_counts/"
 annotation:
     "data_example/NC_009089.1_MaGe.gff"
 fc_feature:
@@ -45,7 +45,7 @@ st_condRef:
 st_condition: 
    "WTvsBase"
 st_dir:
-   "04_DEG/"
+   "05_DEG/"
 st_designDir:
    "data_example/"
 st_group:

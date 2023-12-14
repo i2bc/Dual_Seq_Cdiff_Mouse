@@ -42,7 +42,7 @@ In the `07_Fletcher_and_Pruss_analyses` folder, extract the archive `Dual_Seq_Cd
 
 Under the activated Dual_Seq_Cdiff_Mouse_smk conda environment and in the `07_Fletcher_and_Pruss_analyses` folder, run : `snakemake --snakefile fQC_bwt2_ftCounts_DEseq2_annot.smk --configfile fQC_bwt2_ftCounts_DEseq2_annot.yml --cores 1`
 
-The functional test is completed if there is no difference between `07_Fletcher_and_Pruss_analyses/04_DEG/functionnal_example/tables/WTvsBase.complete_annot.txt` result file and `07_Fletcher_and_Pruss_analyses/data_example/expectedResultOfFunctionalTest.txt` file.
+The functional test is completed if there is no difference between `04_DEG/functional_example/tables/WTvsBase.complete_annot.txt` result file and `data_example/expectedResultOfFunctionalTest.txt` file (`07_Fletcher_and_Pruss_analyses` folder).
 
 
 
