@@ -14,9 +14,9 @@
 # - inverse the strand of the R1 file (awk)
 # - concatenate the reversed R1 file and the R2 file (cat)
 # - sort by ascending position for next bedtools step (sort)
-for i in ../03_mapping_genome/*.bam ; do samtools index ${i} ; done
 mkdir bam_bed  ; 
 for s in `cat cond_*.txt ` ; do 
+   samtools index ../03_mapping_genome/${s}.bam ;
    samtools view -f 131 -h -o bam_bed/${s}_ppR2.bam ../03_mapping_genome/${s}.bam NC_009089.1 ; 
    samtools view -f  67 -h -o bam_bed/${s}_ppR1.bam ../03_mapping_genome/${s}.bam NC_009089.1 ; 
    for r in 1 2 ; do samtools index bam_bed/${s}_ppR${r}.bam ; done      
