@@ -31,15 +31,17 @@ The files `selection_from_Fletcher_study.txt` and `selection_from_Pruss_study.tx
 
 Third-party softwares may be accessible with the [conda](https://docs.conda.io/en/latest/) environment files present in the `07_Fletcher_and_Pruss_analyses/conda_env` repository (command line example: `conda env create -f conda_env/*.yml`)
 
-Test snakefile operation on a lightweight example:
+To test snakefile operation on a lightweight example:
 
-As the differential analysis step is done with the [SARTools](https://github.com/PF2-pasteur-fr/SARTools) package, copy of the `template_script_DESeq2_CL.r` in the `07_Fletcher_and_Pruss_analyses` folder.
+1- go to the `07_Fletcher_and_Pruss_analyses` folder
 
-In the `07_Fletcher_and_Pruss_analyses` folder, extract the archive `Dual_Seq_Cdiff_Mouse_smk_example.tar.gz` that contains the genome (fasta format) and annotation files (gff format) of _Clostridioides difficile 630_ and the first 10000 reads of R1 and R2 RNAseq data of the Pruss study (WT: [SRR12762560](https://www.ebi.ac.uk/ena/browser/view/SRR12762560) and [SRR12762561](https://www.ebi.ac.uk/ena/browser/view/SRR12762561) ; Base: [SRR12766943](https://www.ebi.ac.uk/ena/browser/view/SRR12766943) and [SRR12766946](https://www.ebi.ac.uk/ena/browser/view/SRR12766946)): `tar -xvzf Dual_Seq_Cdiff_Mouse_smk_example.tar.gz`
+2- download of the `template_script_DESeq2_CL.r` of the the [SARTools](https://github.com/PF2-pasteur-fr/SARTools) package in the `07_Fletcher_and_Pruss_analyses` folder (needed for the differential analysis step).
 
-Under the activated Dual_Seq_Cdiff_Mouse_smk conda environment and in the `07_Fletcher_and_Pruss_analyses` folder, run : `snakemake --snakefile fQC_bwt2_ftCounts_DEseq2_annot.smk --configfile fQC_bwt2_ftCounts_DEseq2_annot.yml --cores 1`
+3- extract the archive `Dual_Seq_Cdiff_Mouse_smk_example.tar.gz` that contains the genome (fasta format) and annotation files (gff format) of _Clostridioides difficile 630_ and the first 10000 reads of R1 and R2 RNAseq data of the Pruss study (WT: [SRR12762560](https://www.ebi.ac.uk/ena/browser/view/SRR12762560) and [SRR12762561](https://www.ebi.ac.uk/ena/browser/view/SRR12762561) ; Base: [SRR12766943](https://www.ebi.ac.uk/ena/browser/view/SRR12766943) and [SRR12766946](https://www.ebi.ac.uk/ena/browser/view/SRR12766946)) in the `07_Fletcher_and_Pruss_analyses` folder: `tar -xvzf Dual_Seq_Cdiff_Mouse_smk_example.tar.gz`
 
-The functional test is completed if there is no difference between `04_DEG/functional_example/tables/WTvsBase.complete_annot.txt` result file and `data_example/expectedResultOfFunctionalTest.txt` file (`07_Fletcher_and_Pruss_analyses` folder).
+4- Under the activated Dual_Seq_Cdiff_Mouse_smk conda environment (`conda activate env_Dual_Seq_Cdiff_Mouse_smk`) and in the `07_Fletcher_and_Pruss_analyses` folder, run : `snakemake --snakefile fQC_bwt2_ftCounts_DEseq2_annot.smk --configfile fQC_bwt2_ftCounts_DEseq2_annot.yml --cores 1`
+
+5- The functional test is completed if there is no difference between `04_DEG/functional_example/tables/WTvsBase.complete_annot.txt` result file and `data_example/expectedResultOfFunctionalTest.txt` file (`07_Fletcher_and_Pruss_analyses` folder).
 
 
 
