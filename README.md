@@ -43,7 +43,7 @@ To test snakefile operation on a lightweight example:
 
 5- Under the activated Dual_Seq_Cdiff_Mouse_smk conda environment (`conda activate env_Dual_Seq_Cdiff_Mouse_smk`) and in the `07_Fletcher_and_Pruss_analyses` folder, run : `snakemake --snakefile fQC_bwt2_ftCounts_DEseq2_annot.smk --configfile fQC_bwt2_ftCounts_DEseq2_annot.yml --cores 1`
 
-6- The functional test is completed if there is no difference between `04_DEG/functional_example/tables/WTvsBase.complete_annot.txt` result file and `data_example/expectedResultOfFunctionalTest.txt` file (`07_Fletcher_and_Pruss_analyses` folder)
+6- The functional test is completed if there is no difference between the expected result file and the current result file (excluding columns based on statistical estimation): `diff <(cut -f 1-12,21- data_example/expectedResultOfFunctionalTest.txt) <(cut -f 1-12,21- 05_DEG/functional_example/tables/WTvsBase.complete_annot.txt)` (`07_Fletcher_and_Pruss_analyses` folder)
 
 
 
