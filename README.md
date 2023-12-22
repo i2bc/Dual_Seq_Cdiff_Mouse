@@ -45,9 +45,15 @@ To test snakefile operation on a lightweight example:
 
 6- The functional test is completed if there is no difference between the expected result file and the current result file (excluding columns based on statistical estimation): `diff <(cut -f 1-12,21- data_example/expectedResultOfFunctionalTest.txt) <(cut -f 1-12,21- 05_DEG/functional_example/tables/WTvsBase.complete_annot.txt)` (`07_Fletcher_and_Pruss_analyses` folder)
 
+### Post Analysis and Figures
 
+Post analysis and figures for the three experiments are based on the tables from the differential expression analyses for all genes (`complete`) for each experiment. Dedicated files and scripts stand in the `08_post_analysis_and_figures` directory.
 
+Chi2 test comparisons and heapmaps of differentially expressed genes in at least two experiments are performed by the `figures_stats_noNA4allStat.R` script. 
 
+Gene set enrichment analyses (GSEA) were performed using a manual replay of the Ma2HTML database (`Ma2Html_for_blitzgsea_analysis`) to define gene sets, the Wald statistic (`stat` column proposed by [SARTools](https://github.com/PF2-pasteur-fr/SARTools)) as gene signatures, and the [blitzgsea](https://github.com/MaayanLab/blitzgsea/) tool using the `blitzgsea_Ma2Html.py` script. 
+
+The pie charts are based on the differentially expressed genes in the leading_edge lists from the GSEA analysis.
 
 
 
