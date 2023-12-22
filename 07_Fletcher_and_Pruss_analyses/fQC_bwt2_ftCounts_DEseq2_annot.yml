@@ -5,7 +5,7 @@ module:
    subread/2.0.1
 cwdDir:
    # "/adapt/to/the/environment/
-   "/home/c.toffano-nioche/OSoutourina/DualRNAseq_2019/TestCodes/Dual_Seq_Cdiff_Mouse/07_Fletcher_and_Pruss_analyses/"
+   "/"
 pePrefix:
    "_"
 peSuffix:
