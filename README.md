@@ -45,9 +45,9 @@ To test snakefile operation on a lightweight example:
 
 6- The functional test is completed if there is no difference between the expected result file and the current result file (excluding columns based on statistical estimation): `diff <(cut -f 1-12,21- data_example/expectedResultOfFunctionalTest.txt) <(cut -f 1-12,21- 05_DEG/functional_example/tables/WTvsBase.complete_annot.txt)` (`07_Fletcher_and_Pruss_analyses` folder)
 
-### Post Analysis and Figures
+### Post-analysis and Figures
 
-Post analysis and figures for the three experiments are based on the tables from the differential expression analyses for all genes (`complete`) for each experiment. Dedicated files and scripts stand in the `08_post_analysis_and_figures` directory. 
+Post-analysis and figures for the three experiments are based on the tables from the differential expression analyses for all genes (`complete`) for each experiment. Dedicated files and scripts stand in the `08_post_analysis_and_figures` directory. 
 
 Chi2 test comparisons and heapmaps (with the [ComplexHeatmap](http://bioconductor.org/packages/ComplexHeatmap/) package) of differentially expressed genes in at least two experiments are performed by the `figures_stats_noNA4allStat.R` script. The corresponding [conda](https://docs.conda.io/en/latest/) environment may be created with the `conda_env/env_R_for_figures_and_stats_Kreis.yml` file.
 
