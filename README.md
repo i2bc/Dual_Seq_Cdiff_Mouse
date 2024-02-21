@@ -27,7 +27,7 @@ The publisehd analysis used are:
 - [Fletcher](https://doi.org/10.1038/s41467-020-20746-4), J.R., Pike, C.M., Parsons, R.J. et al. Clostridioides difficile exploits toxin-mediated inflammation to alter the host nutritional landscape and exclude competitors from the gut microbiota. Nat Commun 12, 462 (2021). doi: 10.1038/s41467-020-20746-4
 - [Pruss](https://doi.org/10.1038/s41586-021-03502-6), K.M., Sonnenburg, J.L. C. difficile exploits a host metabolite produced during toxin-mediated disease. Nature 593, 261–265 (2021). doi: 10.1038/s41586-021-03502-6
 
-The files `selection_from_Fletcher_study.txt` and `selection_from_Pruss_study.txt` contain the selected samples used for the comparisons (see in `07_Fletcher_and_Pruss_analyses/data_example` folder).
+The files `selection_from_Fletcher_study.txt` and `selection_from_Pruss_study.txt` contain the selected samples (dowloaded from the NCBI) and used for the comparisons (see in `07_Fletcher_and_Pruss_analyses/data_example` folder). With the objective to compare sRNAs expression from 3 experiments we select 2 conditions in Fletcher and Pruss experiment and named so on : k stands for our article, p stands for the Pruss experiment, and f stands for the Fletcher experiment. The term "pBase" designs the "Base" condition of the Pruss experiment while "pWT" stands for its "WT" condition. Similarly "fwtd2" and "fwtTY" concern the 2 conditions used from the Fletcher experiment. 
 
 Third-party softwares may be accessible with the [conda](https://docs.conda.io/en/latest/) environment files present in the `07_Fletcher_and_Pruss_analyses/conda_env` repository (command line example: `conda env create -f conda_env/*.yml`)
 
