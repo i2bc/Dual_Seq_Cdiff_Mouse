@@ -51,7 +51,7 @@ Post-analysis and figures for the three experiments are based on the tables from
 
 Chi2 test comparisons and heapmaps (with the [ComplexHeatmap](http://bioconductor.org/packages/ComplexHeatmap/) package) of differentially expressed genes in at least two experiments are performed by the `figures_stats_noNA4allStat.R` script. The corresponding [conda](https://docs.conda.io/en/latest/) environment may be created with the `conda_env/env_R_for_figures_and_stats_Kreis.yml` file.
 
-Gene set enrichment analyses (GSEA) were performed using a manual replay (`Ma2Html_for_blitzgsea_analysis`) of the [Ma2HTML](https://mmonot.eu/MA2HTML/connexion.php)(M. Monot personnal communication, export 1652263129) database to define gene sets, the Wald statistic (`stat` column proposed by [SARTools](https://github.com/PF2-pasteur-fr/SARTools)) as gene signatures, and the [blitzgsea](https://github.com/MaayanLab/blitzgsea/) tool using the `blitzgsea_Ma2Html.py` script. 
+Gene set enrichment analyses (GSEA) were performed using a manual replay (`Ma2Html_for_blitzgsea_analysis`) of the Ma2HTML (M. Monot personnal communication, export 1652263129) database to define gene sets, the Wald statistic (`stat` column proposed by [SARTools](https://github.com/PF2-pasteur-fr/SARTools)) as gene signatures, and the [blitzgsea](https://github.com/MaayanLab/blitzgsea/) tool using the `blitzgsea_Ma2Html.py` script. 
 
 The pie charts are based on the differentially expressed genes in the leading_edge lists from the GSEA analysis.
 
